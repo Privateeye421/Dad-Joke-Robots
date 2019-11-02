@@ -4,6 +4,15 @@ var totalRobots=0;
 console.log("Hello world!");
 makeRobot(1,"haha funny!");
 
+function makeNewRobot() {
+	console.log("makeNewRobot()");
+}
+
+function rollAll() {
+	console.log("rollAll()");
+}
+
+
 function rollJoke(num) {
 	console.log("rollJoke("+num+")");
 	var jokeRequest=new XMLHttpRequest();
