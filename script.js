@@ -9,6 +9,7 @@ function makeNewRobot() {
 	console.log("makeNewRobot()");
 	makeRobot(totalRobots);
 	totalRobots++;
+	console.log("totalRobots="+totalRobots);
 }
 
 function rollAll() {
