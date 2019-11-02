@@ -1,6 +1,15 @@
 h1 {
   text-align: center;
 }
+body{
+  background-color: lightblue;
+}
 .robot-face {
 	width: 150px;
+}
+.joke-text {
+  font-family: 'Roboto Slab', serif;
+}
+title {
+  font-family: 'Roboto Slab', serif;
 }
