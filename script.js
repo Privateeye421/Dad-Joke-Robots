@@ -4,6 +4,7 @@ var totalRobots=1;
 console.log("Hello world!");
 makeNewRobot();
 makeNewRobot();
+rollAll();
 
 function makeNewRobot() {
 	console.log("makeNewRobot()");
@@ -13,6 +14,11 @@ function makeNewRobot() {
 
 function rollAll() {
 	console.log("rollAll()");
+	var i;
+	for (i = 0; i < totalRobots; i++) {
+		console.log("var="+i);
+		rollJoke(i);
+	}
 }
 
 function rollJoke(num) {
@@ -47,3 +53,8 @@ function makeRobot(num){
 	$(".joke-robots").append(newDiv);
 	rollJoke(num);
 }
+
+
+
+
+
