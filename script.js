@@ -45,18 +45,11 @@ function rollJoke(num) {
 function makeRobot(num){
 	console.log("makeRobot("+num+")");
 	var newDiv = $("<div class=\"row joke-row\">");
-	newDiv.html("\
-	<div class=\"col-sm-3 robot-face\"><br \>\
-	<img class=\"robot"+num+"\" src=\"https://avatars.dicebear.com/v2/bottts/:a.svg\"><br \>\
-	</div><br \>\
+	newDiv.html("<div class=\"col-sm-3 robot-face\"><br \>\
+	<img class=\"robot"+num+"\" src=\"https://avatars.dicebear.com/v2/bottts/:a.svg\"><br \></div><br \>\
 	<div class=\"col-sm-9 joke-text\"><br \>\
 	<div class=\"joke"+num+"\">ERROR</div><br \>\
 	</div>");
 	$(".joke-robots").append(newDiv);
 	rollJoke(num);
 }
-
-
-
-
-
