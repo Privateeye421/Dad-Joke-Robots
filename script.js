@@ -3,9 +3,9 @@ var totalRobots=1;
 
 console.log("Hello world!");
 makeNewRobot();
-makeNewRobot();
 rollAll();
-
+makeNewRobot();
+	
 function makeNewRobot() {
 	console.log("makeNewRobot()");
 	makeRobot(totalRobots);
