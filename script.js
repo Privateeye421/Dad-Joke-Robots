@@ -3,6 +3,7 @@ var totalRobots=1;
 
 console.log("Hello world!");
 makeNewRobot();
+makeNewRobot();
 
 function makeNewRobot() {
 	console.log("makeNewRobot()");
