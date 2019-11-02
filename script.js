@@ -10,7 +10,7 @@ newDiv.html("\
 </div><br \>\
 ");
 // append prepend after
-$(".mainPage").append(newDiv);
+$(".joke-robots").append(newDiv);
 
 //<div class="col-sm-3 robot-face">
 //	<img class="robot0" src="https://avatars.dicebear.com/v2/bottts/:robot0.svg">
