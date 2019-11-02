@@ -21,7 +21,7 @@ button {
   padding-left: 200px;
 }
 .joke-text {
-  padding-top: 78.75px;
+  padding: 10px;
   font-family: 'Roboto Slab', serif;
   text-align: center;
   width: 50%;
