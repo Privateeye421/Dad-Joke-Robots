@@ -1,3 +1,4 @@
+var dadJokeURL = 'https://icanhazdadjoke.com/';
 var newDiv = $("<div class=\"row joke-row\">");
 var roboKey = "asdf";
 var jokeKey = "haha funny!!";  
@@ -13,12 +14,13 @@ newDiv.html("\
 $(".joke-robots").append(newDiv);
 
 var jokeRequest=new XMLHttpRequest();
-jokeRequest.open('GET', "https://icanhazdadjoke.com/");
+jokeRequest.open('GET', dadJokeURL);
 jokeRequest.responseType = 'json';
 jokeRequest.send();
 jokeRequest.onload = function() {
-	var requestedJoke = request.joke;
-	$("body").append(requestedJoke);
+	var requestedJoke = jokeRequest.response;
+	$(".joke-robots").append(requestedJoke['joke']	);
+	
 }
 
 //<div class="col-sm-3 robot-face">
