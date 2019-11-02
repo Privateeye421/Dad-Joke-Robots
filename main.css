@@ -9,7 +9,7 @@ button {
 .buttons {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 .main-page{
   background-color: lightblue;
@@ -17,9 +17,14 @@ button {
 .robot-face {
 	width: 150px;
 }
+.joke-robots {
+  padding-left: 200px;
+}
 .joke-text {
+  padding-top: 78.75px;
   font-family: 'Roboto Slab', serif;
   text-align: center;
+  width: 50%;
 }
 title {
   font-family: 'Roboto Slab', serif;
