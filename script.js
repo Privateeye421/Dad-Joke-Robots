@@ -1,4 +1,4 @@
-var dadJokeURL = 'https://icanhazdadjoke.com/';
+var goadrichJokesURL = 'http://api.icndb.com/jokes/random?firstName=Mark&lastName=Goadrich';
 makeRobot(3,"haha funny!");
 
 var newDiv = $("<div class=\"row joke-row\">");
@@ -15,12 +15,16 @@ newDiv.html("\
 $(".joke-robots").append(newDiv);
 
 var jokeRequest=new XMLHttpRequest();
-jokeRequest.open('GET', dadJokeURL);
+jokeRequest.open('GET', goadrichJokesURL);
 jokeRequest.responseType = 'json';
 jokeRequest.send();
 jokeRequest.onload = function() {
 	var requestedJoke = jokeRequest.response;
-	$(".joke-robots").append(requestedJoke.joke);
+	$(".joke-robots").append(requestedJoke.type);
+}
+
+function rollJoke(num) {
+
 }
 
 function makeRobot(num, key){
