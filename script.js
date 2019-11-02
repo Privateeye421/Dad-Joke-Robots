@@ -4,7 +4,7 @@ var totalRobots=1;
 
 console.log("Hello world!");
 makeNewRobot();
-	
+
 function makeNewRobot() {
 	console.log("makeNewRobot()");
 	makeRobot(totalRobots);
@@ -42,7 +42,7 @@ function rollJoke(num) {
 
 function makeRobot(num){
 	console.log("makeRobot("+num+")");
-	var newDiv = $("<div class=\"row joke-row\">");
+	var newDiv = $("<div class=\"row joke-row align-middle\">");
 	newDiv.html("<div class=\"col-sm-3 robot-face\"><br \>\
 	<img class=\"robot"+num+"\" src=\"https://avatars.dicebear.com/v2/bottts/:a.svg\"><br \></div><br \>\
 	<div class=\"col-sm-9 joke-text\"><br \>\
