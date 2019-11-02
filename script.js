@@ -1,6 +1,7 @@
 var goadrichJokesURL = 'http://api.icndb.com/jokes/random?firstName=Mark&lastName=Goadrich';
-console.log("Hello world!");
+var totalRobots=0;
 
+console.log("Hello world!");
 makeRobot(1,"haha funny!");
 
 function rollJoke(num) {
