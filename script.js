@@ -1,17 +1,18 @@
-var goadrichJokesURL = 'http://api.icndb.com/jokes/random?firstName=Mark&lastName=Goadrich';
-var totalRobots=0;
+var goadrichJokesURL = 'http://api.icndb.com/jokes/random?firstName=Mark&limitTo=[nerdy]&lastName=Goadrich';
+var totalRobots=1;
 
 console.log("Hello world!");
-makeRobot(1,"haha funny!");
+makeNewRobot();
 
 function makeNewRobot() {
 	console.log("makeNewRobot()");
+	makeRobot(totalRobots);
+	totalRobots++;
 }
 
 function rollAll() {
 	console.log("rollAll()");
 }
-
 
 function rollJoke(num) {
 	console.log("rollJoke("+num+")");
@@ -26,7 +27,7 @@ function rollJoke(num) {
 		console.log("jokeID="+jokeID);
 		var jokeText=requestedJoke.value.joke;
 		console.log("jokeID="+jokeText);
-		var robotURL="https://avatars.dicebear.com/v2/bottts/:"+jokeID+".svg"
+		var robotURL="https://avatars.dicebear.com/v2/bottts/:"+jokeID+".svg";
 		$(".robot"+num).attr("src", "https://avatars.dicebear.com/v2/bottts/:"+jokeID+".svg");
 		$(".joke"+num).html(jokeText);
 	}
