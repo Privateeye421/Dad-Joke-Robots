@@ -1,6 +1,6 @@
 var goadrichJokesURL = 'https://api.icndb.com/jokes/random?firstName=Mark&limitTo=[nerdy]&lastName=Goadrich';
 var robotPreURL = "https://avatars.dicebear.com/v2/bottts/:";
-var totalRobots=1;
+var totalRobots=0;
 
 console.log("Hello world!");
 makeNewRobot();
