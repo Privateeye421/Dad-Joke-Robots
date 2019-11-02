@@ -2,17 +2,18 @@ h1 {
   text-align: center;
 }
 button {
-  background-color: red;
-  font-family: 'Roboto Slab', serif;
+  background-color: #55ad7a;
   text-align: center;
 }
 .buttons {
   text-align: center;
   padding-top: 50px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
   padding-bottom: 100px;
 }
 .main-page{
-  background-color: lightblue;
+  background-color: #1e5d88;
 }
 .robot-face {
 	width: 150px;
@@ -22,13 +23,14 @@ button {
 }
 .joke-text {
   padding: 10px;
+  color: #23292e;
   font-family: 'Roboto Slab', serif;
   text-align: center;
   width: 50%;
   font-size: 20px;
-  background-color: white;
+  background-color: #d5d5d5;
 }
 title {
   font-family: 'Roboto Slab', serif;
   text-align: center;
-} 
+}
