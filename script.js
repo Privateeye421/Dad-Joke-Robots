@@ -12,6 +12,15 @@ newDiv.html("\
 // append prepend after
 $(".joke-robots").append(newDiv);
 
+var jokeRequest=new XMLHttpRequest();
+jokeRequest.open('GET', "https://icanhazdadjoke.com/");
+jokeRequest.responseType = 'json';
+jokeRequest.send();
+jokeRequest.onload = function() {
+	var requestedJoke = request.joke;
+	$("body").append(requestedJoke);
+}
+
 //<div class="col-sm-3 robot-face">
 //	<img class="robot0" src="https://avatars.dicebear.com/v2/bottts/:robot0.svg">
 //</div>
