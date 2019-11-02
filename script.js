@@ -33,10 +33,11 @@ function rollJoke(num) {
 		console.log("requestedJoke="+jokeRequest.response);
 		var jokeID = requestedJoke.value.id;
 		console.log("jokeID="+jokeID);
+		var robotURL=robotPreURL+jokeID+".svg";
+		console.log("robotURL="+robotURL);
 		var jokeText=requestedJoke.value.joke;
 		console.log("jokeID="+jokeText);
-		var robotURL=robotPreURL+jokeID+".svg";
-		$(".robot"+num).attr("src", "https://avatars.dicebear.com/v2/bottts/:"+jokeID+".svg");
+		$(".robot"+num).attr("src", robotURL);
 		$(".joke"+num).html(jokeText);
 	}
 }
