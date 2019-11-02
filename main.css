@@ -1,6 +1,16 @@
 h1 {
   text-align: center;
 }
+button {
+  background-color: "red";
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
 .main-page{
   background-color: lightblue;
 }
@@ -9,7 +19,9 @@ h1 {
 }
 .joke-text {
   font-family: 'Roboto Slab', serif;
+  text-align: center;
 }
 title {
   font-family: 'Roboto Slab', serif;
+  text-align: center;
 }
