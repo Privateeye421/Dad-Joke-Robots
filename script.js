@@ -1,4 +1,5 @@
 var dadJokeURL = 'https://icanhazdadjoke.com/';
+
 var newDiv = $("<div class=\"row joke-row\">");
 var roboKey = "asdf";
 var jokeKey = "haha funny!!";  
@@ -19,15 +20,5 @@ jokeRequest.responseType = 'json';
 jokeRequest.send();
 jokeRequest.onload = function() {
 	var requestedJoke = jokeRequest.response;
-	$(".joke-robots").append(requestedJoke['joke']	);
-	
+	$(".joke-robots").append(requestedJoke.joke);
 }
-
-//<div class="col-sm-3 robot-face">
-//	<img class="robot0" src="https://avatars.dicebear.com/v2/bottts/:robot0.svg">
-//</div>
-//<div class="col-sm-9 joke-text">
-//	<div class="joke0">
-//		TEXT A:LKSJDFLK A:LKJSDLFKJ A: V2
-//	</div>
-//</div>
