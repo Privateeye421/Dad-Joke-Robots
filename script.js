@@ -46,7 +46,7 @@ function makeRobot(num){
 	newDiv.html("<div class=\"col-sm-3 robot-face\"><br \>\
 	<img class=\"robot"+num+"\" src=\"https://avatars.dicebear.com/v2/bottts/:a.svg\"><br \></div><br \>\
 	<div class=\"col-sm-9 joke-text\"><br \>\
-	<div class=\"joke"+num+"\">ERROR</div><br \>\
+	<div class=\"joke"+num+"\">LOADING</div><br \>\
 	</div>");
 	$(".joke-robots").append(newDiv);
 	rollJoke(num);
